@@ -9,10 +9,8 @@ function PokeList() {
     fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=${cargar}`)
       .then((response) => response.json())
       .then((data) => setPokemons(data.results))
-
-      .then((res) => {
-        if (!res.ok) throw new Error("HTTP " + res.status);
-        return res.json();
+      .catch((error) => {
+        console.error("Error al cargar:", error);
       });
   }, [cargar]);
 

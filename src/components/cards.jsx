@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import PokeDetails from "../pages/pokedetails";
+import Pokeball2 from "../assets/pokeball-2.png";
 
 function Cards({ name, url }) {
   const [data, setData] = useState(null);
@@ -43,9 +44,10 @@ function Cards({ name, url }) {
 
   return (
     <div className="cardStyle card">
+      <img className="pokeball" src={Pokeball2} alt="Pokeball" />
       <img className="logo img-act" src={img} alt={name} />
-      <h3>{name}</h3>
-      <p>Pokedex # {data.id}</p>
+      <h3 className="name-poke">{name}</h3>
+      <p className="id-poke">Pokedex # {data.id}</p>
       {/* <p className="tipo">Tipo: {type}</p> */}
       <div className="card-buttons">
         <Link className="btn-det btn-act" to={`/pokedetails/${data.id}`}>
