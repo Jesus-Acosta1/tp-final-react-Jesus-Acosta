@@ -1,0 +1,217 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+
+
+.app { margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+scroll-padding-top: 90px;
+}
+
+:root {
+    --color-principal: #e00606;
+    --color-secundario: #ffffff;
+    --color-terciario: #ecb309;
+    --color-cuarto:#3c06b1;
+}
+
+/* nav {
+background: linear-gradient(var(--color-principal) ,#000000 ) ;
+color:rgb(0, 0, 0);
+margin: 0;
+width: 100%;
+height: 700px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+
+
+.links{
+color: var(--color-terciario);
+text-decoration: none;
+display: inline-block;
+padding: 15px 10px 15px 10px;
+background: linear-gradient(var(--color-principal) , black ) ;
+border: solid 2px var(--color-secundario);
+cursor: pointer;
+border-radius: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.home{
+  margin: 0 auto ;
+  box-sizing: border-box;
+background: linear-gradient(to right ,rgb(0, 78, 196) , rgb(0, 0, 0)) ;
+padding-top: 50px;
+width: 100%;
+
+
+
+
+
+}
+
+
+/* .cards1{
+  display: flex;
+}
+
+.lista{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.pokeimg{
+  width: 150px;
+  width: fit-content;
+} */
+
+
+
+.logo{
+  width: 100;
+ height: 100;
+ object-Fit: contain;
+
+}
+
+
+/* .lista{
+  display: flex;
+} */
+
+.poke-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* 
+.card{
+  padding: 20px; */
+
+.lista {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.cardStyle{
+  background: #fff;
+    border-Radius: 10;
+    padding: 12;
+    width: 160;
+    text-Align: center;
+    box-Shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.card{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  margin: 30px;
+}
+
+
+.logo{
+  width: 100px;
+  height: 100px;
+  object-Fit: contain;
+  margin: 0 auto;}
+
+  .img-act:hover{transform: scale(2.5);
+    
+  }
+
+
+  .tipo{
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+.btn-det{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 100px;
+  border: solid 2px black;
+  background-color: #3c06b1;
+  color: black;
+  text-decoration: none;
+}
+
+.btn-det:hover{
+  background-color: #0a4be1;
+  border-radius: 10px;
+  border: solid 2px black;
+  color: #000000;
+  cursor: pointer;
+}
+
+
+.btn-fav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 100px;
+  border: solid 2px black;
+  background-color: #bc0612;
+  color: black;
+  text-decoration: none;
+
+}
+.btn-fav:hover{
+  background-color: #f32525;
+  border-radius: 10px;
+  border: solid 2px black;
+  color: #000000;
+  cursor: pointer;
+}
+
+.btn-act:active{transform: scale(0.95);
+}
+
+
+.card-buttons{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.btn-cargar{
+      display: flex;
+    width: 13rem;
+    justify-content: space-around;
+}
+.sig-ant{
+  border-radius: 10px;
+  width: 100px;
+  border: solid 2px black;
+  background-color: #bc0612;
+  color: black;
+  text-decoration: none;
+
+}
+
+.sig-ant:hover{
+  background-color: #0a4be1;
+  border-radius: 10px;
+  border: solid 2px black;
+  color: #000000;
+  cursor: pointer;}
+
+footer {
+background: linear-gradient(var(--color-cuarto) ,#000000 ) ;
+color:rgb(255, 255, 255);
+margin: 0;
+width: 100%;
+height: 70px auto;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: center;
+gap: 1rem;
+}
