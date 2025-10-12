@@ -1,7 +1,5 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-
-
 .app { margin: 0;
 box-sizing: border-box;
 scroll-behavior: smooth;
@@ -45,28 +43,9 @@ font-family: Arial, Helvetica, sans-serif;
 background: linear-gradient(to right ,rgb(0, 78, 196) , rgb(0, 0, 0)) ;
 padding-top: 50px;
 width: 100%;
-
-
-
-
-
 }
 
 
-/* .cards1{
-  display: flex;
-}
-
-.lista{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.pokeimg{
-  width: 150px;
-  width: fit-content;
-} */
 
 
 
@@ -74,7 +53,6 @@ width: 100%;
   width: 100;
  height: 100;
  object-Fit: contain;
-
 }
 
 
@@ -83,52 +61,73 @@ width: 100%;
 } */
 
 .poke-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 /* 
 .card{
   padding: 20px; */
 
 .lista {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-
+/*----- estilos de las cards------ */
 .cardStyle{
-  background: #fff;
-    border-Radius: 10;
-    padding: 12;
-    width: 160;
-    text-Align: center;
-    box-Shadow: 0 2px 8px rgba(0,0,0,0.12);
+  background: linear-gradient(to top ,rgb(0, 78, 196) , rgb(0, 23, 58)) ;
+  border: solid 4px rgb(0, 0, 0);
+  box-Shadow: 8px 8px 10px rgba(0, 0, 0, 0.844);
 }
 .card{
   display: flex;
+  text-align: center;
   justify-content: center;
-  width: 300px;
-  margin: 30px;
+  width: 35vh;
+  height: 55vh;
+  margin: 2vh;
+  padding: 2vh;
+}
+/* --------------------------------- */
+
+.logo{
+  width: 17vh;
+  height: 17vh;
+  position: absolute;
+  z-index: 999;
+  bottom: 27vh;
+  left: 10vh;
+}
+
+.img-act:hover{transform: scale(1.5);
+  filter: drop-shadow( 5px 5px 4px rgb(0, 0, 0)); 
+  }
+  
+.pokeball{
+  height: 27vh;
+  object-Fit: contain;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.tipo{
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.name-poke{
+  text-transform: capitalize;
+  color: rgb(249, 215, 0);
 }
 
 
-.logo{
-  width: 100px;
-  height: 100px;
-  object-Fit: contain;
-  margin: 0 auto;}
-
-  .img-act:hover{transform: scale(2.5);
-    
-  }
+.id-poke{
+  text-transform: capitalize;
+  color: rgb(249, 215, 0);
+}
 
 
-  .tipo{
-    font-weight: bold;
-    text-transform: capitalize;
-  }
 
 .btn-det{
   display: flex;
@@ -161,7 +160,6 @@ width: 100%;
   background-color: #bc0612;
   color: black;
   text-decoration: none;
-
 }
 .btn-fav:hover{
   background-color: #f32525;
@@ -182,9 +180,9 @@ width: 100%;
 }
 
 .btn-cargar{
-      display: flex;
-    width: 13rem;
-    justify-content: space-around;
+  display: flex;
+  width: 13rem;
+  justify-content: space-around;
 }
 .sig-ant{
   border-radius: 10px;
@@ -204,14 +202,14 @@ width: 100%;
   cursor: pointer;}
 
 footer {
-background: linear-gradient(var(--color-cuarto) ,#000000 ) ;
-color:rgb(255, 255, 255);
-margin: 0;
-width: 100%;
-height: 70px auto;
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-align-items: center;
-gap: 1rem;
+  background: linear-gradient(var(--color-cuarto) ,#000000 ) ;
+  color:rgb(255, 255, 255);
+  margin: 0;
+  width: 100%;
+  height: 70px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
