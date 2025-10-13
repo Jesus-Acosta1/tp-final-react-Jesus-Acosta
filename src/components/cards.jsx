@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import PokeDetails from "../pages/pokedetails";
 import Pokeball2 from "../assets/pokeball-2.png";
 
-function Cards({ name, url }) {
+function Cards({ url }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -40,6 +40,7 @@ function Cards({ name, url }) {
     data.sprites?.front_default.official_artwork ||
     `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`;
   // `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`;
+
   const type = data.types?.[0]?.type?.name ?? "—";
 
   return (
@@ -48,7 +49,7 @@ function Cards({ name, url }) {
       <img className="logo img-act" src={img} alt={name} />
       <h3 className="name-poke">{name}</h3>
       <p className="id-poke">Pokedex # {data.id}</p>
-      {/* <p className="tipo">Tipo: {type}</p> */}
+      <p className="tipo">Tipo: {type}</p>
       <div className="card-buttons">
         <Link className="btn-det btn-act" to={`/pokedetails/${data.id}`}>
           Detalles
@@ -60,5 +61,4 @@ function Cards({ name, url }) {
     </div>
   );
 }
-
 export default Cards;

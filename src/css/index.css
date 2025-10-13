@@ -201,6 +201,21 @@ width: 100%;
   color: #000000;
   cursor: pointer;}
 
+
+.details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vh;
+  height: 70vh;
+  margin: 2vh;
+  padding: 2vh;
+}
+
+.img-deta{
+  height: 28vh;
+}
+
 footer {
   background: linear-gradient(var(--color-cuarto) ,#000000 ) ;
   color:rgb(255, 255, 255);
