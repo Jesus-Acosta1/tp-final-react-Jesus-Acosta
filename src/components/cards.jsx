@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import PokeDetails from "../pages/pokedetails";
 import Pokeball2 from "../assets/pokeball-2.png";
+import corazon from "../assets/corazon.png";
 
 function Cards({ url }) {
   const [data, setData] = useState(null);
@@ -33,28 +34,41 @@ function Cards({ url }) {
     };
   }, [url]);
 
-  if (loading) return <div className="cardStyle1">Cargando...</div>;
-  if (error || !data) return <div className="cardStyle1">Error cargando</div>;
+  if (loading) return <div>Cargando...</div>;
+  if (error || !data) return <div>Error cargando</div>;
 
   const img =
     data.sprites?.front_default.official_artwork ||
     `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`;
-  // `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`;
 
-  const type = data.types?.[0]?.type?.name ?? "—";
+  // click de la imagen para ir a detalles//
+  const onclick = () => {
+    window.location.href = `/pokedetails/${data.id}`;
+  };
+
+  // const onclickfav = () => {
+  //   window.location.href = `/favoritos`;
+  // };
 
   return (
     <div className="cardStyle card">
       <img className="pokeball" src={Pokeball2} alt="Pokeball" />
-      <img className="logo img-act" src={img} alt={name} />
-      <h3 className="name-poke">{name}</h3>
+      <img
+        className="logo img-act"
+        src={img}
+        alt={data.name}
+        onClick={onclick}
+      />
+      <h2 className="name-poke">{data.name}</h2>
       <p className="id-poke">Pokedex # {data.id}</p>
-      <p className="tipo">Tipo: {type}</p>
+      {/* <p className="tipo">Tipo:{data.types[0].type.name}</p> */}
       <div className="card-buttons">
         <Link className="btn-det btn-act" to={`/pokedetails/${data.id}`}>
           Detalles
         </Link>
-        <Link className="btn-fav btn-act" to={`/favoritos`}>
+        {/* <img className="img-act" src={corazon} onClick={onclickfav} /> */}
+
+        <Link className="btn-fav btn-act" to={`/pokefav`}>
           Favoritos
         </Link>
       </div>
