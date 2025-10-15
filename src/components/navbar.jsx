@@ -5,7 +5,7 @@ import PokeDetails from "../pages/pokedetails";
 
 function NavBar() {
   return (
-    <ul className="nav nav-underline bg-danger ">
+    <ul className="navbar">
       <li className="nav-item">
         <Link className="nav-link " to="/">
           Inicio
