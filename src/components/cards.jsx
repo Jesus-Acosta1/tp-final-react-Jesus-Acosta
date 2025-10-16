@@ -59,7 +59,7 @@ function Cards({ url }) {
         alt={data.name}
         onClick={onclick}
       />
-      <h2 className="name-poke">{data.name}</h2>
+      <h3 className="name-poke">{data.name}</h3>
       <p className="id-poke">Pokedex # {data.id}</p>
       {/* <p className="tipo">Tipo:{data.types[0].type.name}</p> */}
       <div className="card-buttons">

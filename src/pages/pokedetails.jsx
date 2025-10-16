@@ -25,66 +25,55 @@ function PokeDetails() {
 
   return (
     <>
-      <div className="poke-details">
+      <div className="pages">
         <h1 className="name-poke">{pokeDetalles.name}</h1>
         <h3>ID: {pokeDetalles.id}</h3>
-        <img className="img-deta img-act" src={img} alt={pokeDetalles.name} />
-      </div>
-      <div className="box">
-        <p className="titulo">Tipo:</p>
-        <p>{pokeDetalles.types[0]?.type.name}</p>
-        <p>{pokeDetalles.types[1]?.type.name}</p>
-      </div>
-      {/* ------------------------------ */}
-      <div className="box">
-        <p>Experiencia base: {pokeDetalles.base_experience} </p>
-        <p>Habilidades: {pokeDetalles.abilities[0]?.ability.name} </p>
-        <p>Habilidades: {pokeDetalles.abilities[1]?.ability.name} </p>
-      </div>
-      {/* ------------------------------ */}
-      <div className="box">
-        <p className="titulo">stats</p>
-        <p>Hp: {pokeDetalles.stats[0]?.base_stat} </p>
-        <p>Ataque: {pokeDetalles.stats[1]?.base_stat} </p>
-        <p>Defensa: {pokeDetalles.stats[2]?.base_stat} </p>
-        <p>Ataque Especial: {pokeDetalles.stats[3]?.base_stat} </p>
-        <p>Defensa Especial: {pokeDetalles.stats[4]?.base_stat} </p>
-        <p>Velocidad: {pokeDetalles.stats[5]?.base_stat} </p>
-      </div>
+        <div className="header">
+          <img className="img-deta img-act" src={img} alt={pokeDetalles.name} />
+        </div>
 
-      <div className="box">
-        {/* ---------------------------------- */}
-        <p className="titulo">Movimientos:</p>
-        <p>1. {pokeDetalles.moves[0]?.move.name} </p>
-        <p>2. {pokeDetalles.moves[1]?.move.name} </p>
-        <p>3. {pokeDetalles.moves[2]?.move.name} </p>
-        <p>4. {pokeDetalles.moves[3]?.move.name} </p>
-        <p>5. {pokeDetalles.moves[4]?.move.name} </p>
-        <p>6. {pokeDetalles.moves[5]?.move.name} </p>
-        <p>7. {pokeDetalles.moves[6]?.move.name} </p>
-        <p>8. {pokeDetalles.moves[7]?.move.name} </p>
-        <p>9. {pokeDetalles.moves[8]?.move.name} </p>
-        <p>10. {pokeDetalles.moves[9]?.move.name} </p>
-        <p>11. {pokeDetalles.moves[10]?.move.name} </p>
-        <p>12. {pokeDetalles.moves[11]?.move.name} </p>
-        <p>13. {pokeDetalles.moves[12]?.move.name} </p>
-        <p>14. {pokeDetalles.moves[13]?.move.name} </p>
-        <p>15. {pokeDetalles.moves[14]?.move.name} </p>
-        <p>16. {pokeDetalles.moves[15]?.move.name} </p>
-        <p>17. {pokeDetalles.moves[16]?.move.name} </p>
-        <p>18. {pokeDetalles.moves[17]?.move.name} </p>
-        <p>19. {pokeDetalles.moves[18]?.move.name} </p>
-        <p>20. {pokeDetalles.moves[19]?.move.name} </p>
-      </div>
-      {/* ---------------------------------- */}
-      <div className="box">
-        <p>Peso: {pokeDetalles.weight} </p>
-        <p>Altura: {pokeDetalles.height} </p>
-      </div>
-      <div className="card-buttons">
-        <Link className="btn-det btn-act" to={`/pokelist`}>
-          Volver
-        </Link>
+        <div className="poke-details">
+          <div className="card tipe">
+            <p>Tipo:</p>
+            <p>{pokeDetalles.types[0]?.type.name}</p>
+            <p>{pokeDetalles.types[1]?.type.name}</p>
+          </div>
+          {/* ------------------------------ */}
+          <div className="card hab">
+            <p>Experiencia base: {pokeDetalles.base_experience} </p>
+            <p>Habilidades: {pokeDetalles.abilities[0]?.ability.name} </p>
+            <p>Habilidades: {pokeDetalles.abilities[1]?.ability.name} </p>
+          </div>
+          {/* ------------------------------ */}
+          <div className="card stats">
+            <p>stats</p>
+            <p>Hp: {pokeDetalles.stats[0]?.base_stat} </p>
+            <p>Ataque: {pokeDetalles.stats[1]?.base_stat} </p>
+            <p>Defensa: {pokeDetalles.stats[2]?.base_stat} </p>
+            <p>Ataque Especial: {pokeDetalles.stats[3]?.base_stat} </p>
+            <p>Defensa Especial: {pokeDetalles.stats[4]?.base_stat} </p>
+            <p>Velocidad: {pokeDetalles.stats[5]?.base_stat} </p>
+          </div>
+          <div className="card moves">
+            {/* ---------------------------------- */}
+            <p>Movimientos:</p>
+            <p>1. {pokeDetalles.moves[0]?.move.name} </p>
+            <p>2. {pokeDetalles.moves[1]?.move.name} </p>
+            <p>3. {pokeDetalles.moves[2]?.move.name} </p>
+            <p>4. {pokeDetalles.moves[3]?.move.name} </p>
+            <p>5. {pokeDetalles.moves[4]?.move.name} </p>
+          </div>
+          {/* ---------------------------------- */}
+          <div className="card hw">
+            <p>Peso: {pokeDetalles.weight / 10} kg</p>
+            <p>Altura: {pokeDetalles.height / 10} metros</p>
+          </div>
+        </div>
+        <div className="card-buttons">
+          <Link className="btn-det btn-act" to={`/pokelist`}>
+            Volver
+          </Link>
+        </div>
       </div>
     </>
   );

@@ -6,8 +6,11 @@ import Consultapoke from "../api/pokeapi";
 function PokeFav() {
   return (
     <div className="home">
-      <h1>tus pokémon favoritos en su solo lugar</h1>
-      <p>tus Pokémon favoritos.</p>
+      <h2>Mis Pokémon Favoritos</h2>
+      <p>
+        Estos son tus compañeros de batalla favoritos. Puedes quitarlos o
+        revisar sus detalles en cualquier momento.
+      </p>
     </div>
   );
 }

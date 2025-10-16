@@ -14,42 +14,81 @@ scroll-padding-top: 90px;
     --color-cuarto:#3c06b1;
 }
 
-.navbar {
-background: linear-gradient(#000000 ,var(--color-principal)  ) ;
-color:rgb(0, 0, 0);
-margin: 0;
+
+/* estilos de la barra de navegación */
+.barra{
+position: fixed;
+top: 0;
 width: 100%;
-height: 700px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+height: 50px;
+background: linear-gradient( rgb(0, 0, 0) , rgb(12, 2, 196)  , rgb(102, 2, 2) , rgb(0, 0, 0) );
+align-content: center;
+z-index: 1000;
+display: flex;
+justify-content: flex-end;
+
+}
+.nav{
+display: inline-block;
 }
 
+.nav-list{
+display: contents;
+margin: 0;
+text-align: center;
+}
 
-.links{
-color: var(--color-terciario);
+.nav-item{
+display: flex;
+align-items: center;
+margin-top:0;
+padding: 1rem;
+
+}
+
+/* botones */
+.nav-link{
+color: #ecb309;
 text-decoration: none;
 display: inline-block;
-padding: 15px 10px 15px 10px;
-background: linear-gradient(var(--color-principal) , black ) ;
-border: solid 2px var(--color-secundario);
+padding: 7px 18px;
+background: linear-gradient( black , red  , white );
+border: solid 2px rgb(0, 0, 0);
 cursor: pointer;
 border-radius: 20px;
 font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+/* --------pages home------- */
 .home{
   margin: 0 auto ;
   box-sizing: border-box;
-background: linear-gradient(to right ,rgb(0, 78, 196) , rgb(0, 0, 0)) ;
-padding-top: 50px;
-width: 100%;
+  background: linear-gradient(to top ,rgb(0, 78, 196) , rgb(0, 23, 58)) ;
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.pokemones {
+  width: 30vh;
+  margin: 0 auto;
+  filter: drop-shadow( 5px 5px 4px rgb(0, 0, 0));
+}
 
-
-
-
+.home-text{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 40%;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+  
+}
 
 
 
@@ -95,14 +134,16 @@ width: 100%;
 .card-buttons{
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 10px;
-  gap: 10px;
+  padding: 12px;
+  gap: 1rem;
 }
 
 .btn-cargar{
   display: flex;
   width: 13rem;
   justify-content: space-around;
+  padding: 12px;
+  gap: 1rem;
 }
 .sig-ant{
   border-radius: 10px;
@@ -119,7 +160,8 @@ width: 100%;
   border-radius: 10px;
   border: solid 2px black;
   color: #000000;
-  cursor: pointer;}
+  cursor: pointer;
+}
 
 
 
@@ -214,32 +256,48 @@ width: 100%;
 
 /* -------------pokedetails------------------------------------- */
 
-
-.box{
-      background: blue;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 33vh;
-    border: solid 5px black;
+h1,h2,h3{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: capitalize;
 }
 
-.details{
+.pages{
+  margin-top: 50px ;
+  background: blue;
+  width: 100%;
+}
+
+.header{
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 2rem;
+  gap: 10px;
+  width: 100%;
+}
+
+.poke-details{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50vh;
-  height: 70vh;
-  margin: 2vh;
-  padding: 2vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .img-deta{
-  height: 28vh;
+  margin: 0 auto;
+    height: 37vh;
+  filter: drop-shadow( 5px 5px 4px rgb(0, 0, 0));
+
+}
+.stats , .tipe , .hab , .moves , .hw{
+  background: linear-gradient(to right, rgba(249, 0, 0, 0.621), rgba(255, 255, 255, 0.1));
+  border: solid 2px black;
 }
 
 footer {
-  background: linear-gradient(var(--color-cuarto) ,#000000 ) ;
+  background: linear-gradient(rgb(0, 78, 196) ,#000000 ) ;
   color:rgb(255, 255, 255);
   margin: 0;
   width: 100%;
@@ -250,3 +308,8 @@ footer {
   align-items: center;
   gap: 1rem;
 }
+
+
+
+/* -------------------------- */
+
