@@ -23,17 +23,22 @@ function PokeList() {
 
   return (
     <div className="lista">
-      <h1>Listado de Pokemons</h1>
+      <h2>Explora el Mundo Pokémon</h2>
+      <p className="subtitulo">
+        Aquí verás la lista de Pokémon con sus nombres y números de Pokédex. Usa
+        el botón “Detalles” para ver más información o agrégalos a tus favoritos
+        para guardarlos en tu equipo.
+      </p>
       <div className="poke-list">
         {pokemons.map((pokemon, index) => (
           <Cards key={index} name={pokemon.name} url={pokemon.url} />
         ))}
       </div>
       <span className="btn-cargar">
-        <button className="sig-ant" onClick={CargarMenos}>
+        <button className="nav-links" onClick={CargarMenos}>
           Atras
         </button>
-        <button className="sig-ant" onClick={CargarMas}>
+        <button className="nav-links" onClick={CargarMas}>
           Adelante
         </button>
       </span>

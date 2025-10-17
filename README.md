@@ -1,16 +1,75 @@
-# React + Vite
+# 🧩 Pokédex React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una Pokédex creada con **React + Vite**, conectada a la **PokeAPI**, que permite ver una lista de Pokémon, detalles individuales y estilos dinámicos según el tipo (fuego, agua, planta, etc).  
+Incluye uso de **Bootstrap** para el diseño responsivo y componentes reutilizables.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## React Compiler
+- ⚛️ **React 18**
+- ⚡ **Vite** (para un entorno rápido y moderno de desarrollo)
+- 🎨 **Bootstrap 5** (para diseño visual y grillas responsivas)
+- 🌐 **PokeAPI** (fuente de datos de los Pokémon)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 🧱 Requisitos previos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Antes de comenzar, asegurate de tener instalado en tu sistema:
+
+- [Node.js](https://nodejs.org/) (versión 16 o superior)
+- [Git](https://git-scm.com/) (opcional pero recomendado)
+
+---
+
+## ⚙️ Instalación paso a paso
+
+1. **Cloná este repositorio**
+
+   ```bash
+   git clone https://github.com/Jesus-Acosta1/tp-final-react-Jesus-Acosta.git
+   ```
+
+2. **Ingresá a la carpeta del proyecto**
+
+   Cd TP-FINAL-REACT-JESUS-ACOSTA
+
+3. **Instalá las dependencias**
+
+   npm install
+
+4. **Instalá Bootstrap**
+
+   npm install bootstrap
+
+5. **▶️ Ejecución del proyecto**
+
+   Iniciá el servidor de desarrollo con:
+   npm run dev
+
+6. **Luego abrí el proyecto en tu navegador**
+
+   👉 http://localhost:5173
+
+## 🏁 Licencia
+
+    Este proyecto es de uso libre con fines educativos y de aprendizaje.
+    No tiene fines comerciales ni de distribución oficial de Pokémon.
+
+## 🙌 Agradecimientos y cierre
+
+Gracias por tomarte el tiempo de ver este proyecto.
+Este trabajo forma parte de mi proceso de aprendizaje y crecimiento como desarrollador web.
+Mi objetivo es seguir mejorando cada día, aprendiendo nuevas tecnologías y construyendo proyectos cada vez más completos.
+
+## 👤 Desarrollador
+
+👨‍💻 Jesús Acosta (@Jesus_Acostag15)
+📍 Buenos Aires, Argentina
+💡 “Cada línea de código es un paso más cerca de tu mejor versión.”
+📧 jesus.acostag015@gmail.com
+🌐 GitHub: https://github.com/Jesus-Acostag15
+
+✨ Muchas gracias por tu atención y por visitar este proyecto.
+⚡ ¡Atrápalos todos y seguí aprendiendo sin parar!

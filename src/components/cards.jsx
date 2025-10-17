@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import PokeDetails from "../pages/pokedetails";
 import Pokeball2 from "../assets/pokeball-2.png";
-import corazon from "../assets/corazon.png";
 
 function Cards({ url }) {
   const [data, setData] = useState(null);
@@ -59,14 +58,13 @@ function Cards({ url }) {
         alt={data.name}
         onClick={onclick}
       />
-      <h2 className="name-poke">{data.name}</h2>
+      <h3 className="name-poke">{data.name}</h3>
       <p className="id-poke">Pokedex # {data.id}</p>
       {/* <p className="tipo">Tipo:{data.types[0].type.name}</p> */}
       <div className="card-buttons">
         <Link className="btn-det btn-act" to={`/pokedetails/${data.id}`}>
           Detalles
         </Link>
-        {/* <img className="img-act" src={corazon} onClick={onclickfav} /> */}
 
         <Link className="btn-fav btn-act" to={`/pokefav`}>
           Favoritos
