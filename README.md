@@ -59,17 +59,17 @@ Antes de comenzar, asegurate de tener instalado en tu sistema:
 
 ## 🙌 Agradecimientos y cierre
 
-Gracias por tomarte el tiempo de ver este proyecto.
-Este trabajo forma parte de mi proceso de aprendizaje y crecimiento como desarrollador web.
-Mi objetivo es seguir mejorando cada día, aprendiendo nuevas tecnologías y construyendo proyectos cada vez más completos.
+   Gracias por tomarte el tiempo de ver este proyecto.
+   Este trabajo forma parte de mi proceso de aprendizaje y crecimiento como desarrollador web.
+   Mi objetivo es seguir mejorando cada día, aprendiendo nuevas tecnologías y construyendo proyectos cada vez más completos.
 
 ## 👤 Desarrollador
 
-👨‍💻 Jesús Acosta
-📍 Buenos Aires, Argentina
-💡 “Cada línea de código es un paso más cerca de tu mejor versión.”
-📧 jesus.acostag015@gmail.com
-🌐 GitHub: https://github.com/Jesus-Acostag15
+   👨‍💻 Jesús Acosta
+   📍 Buenos Aires, Argentina
+   💡 “Cada línea de código es un paso más cerca de tu mejor versión.”
+   📧 jesus.acostag015@gmail.com
+   🌐 GitHub: https://github.com/Jesus-Acosta1
 
 ✨ Muchas gracias por tu atención y por visitar este proyecto.
 ⚡ ¡Atrápalos todos y seguí aprendiendo sin parar!
