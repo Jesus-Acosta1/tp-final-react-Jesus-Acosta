@@ -65,7 +65,7 @@ Mi objetivo es seguir mejorando cada día, aprendiendo nuevas tecnologías y con
 
 ## 👤 Desarrollador
 
-👨‍💻 Jesús Acosta (@Jesus_Acostag15)
+👨‍💻 Jesús Acosta
 📍 Buenos Aires, Argentina
 💡 “Cada línea de código es un paso más cerca de tu mejor versión.”
 📧 jesus.acostag015@gmail.com
