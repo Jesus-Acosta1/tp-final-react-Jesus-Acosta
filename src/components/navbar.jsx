@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "../pages/home";
 import PokeList from "../pages/pokelist";
 import PokeDetails from "../pages/pokedetails";
+import pokeball from "../assets/pokeball-2.png";
 
 function NavBar() {
   const onclick = () => {
@@ -9,15 +10,15 @@ function NavBar() {
   };
   return (
     <nav className="barra">
-      <h1>POKEDEX</h1>
+      <img className="logo-poke" src={pokeball} alt="pokeball" />
       <ul className="nav-list">
         <li className="nav-item">
-          <Link className="nav-link " to="/">
+          <Link className="nav-links " to="/">
             Inicio
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/pokelist">
+          <Link className="nav-links" to="/pokelist">
             Pokemons
           </Link>
         </li>

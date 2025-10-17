@@ -7,7 +7,7 @@ function PokeFav() {
   return (
     <div className="home">
       <h2>Mis Pokémon Favoritos</h2>
-      <p>
+      <p className="subtitulo">
         Estos son tus compañeros de batalla favoritos. Puedes quitarlos o
         revisar sus detalles en cualquier momento.
       </p>

@@ -13,7 +13,10 @@ function Footer() {
         . La idea es aprender sobre consumo de APIs, manejo de estados globales
         y diseño con componentes reutilizables.
       </p>
-      <h3>Hecho por Jesus Acosta</h3>
+      <p>Hecho por Jesus Acosta</p>
+      <p>
+        Desarrollador en formación GitHub: https://github.com/Jesus-Acostag15
+      </p>
       <p>© 2025 Pokedex. All rights reserved.</p>
     </footer>
   );
